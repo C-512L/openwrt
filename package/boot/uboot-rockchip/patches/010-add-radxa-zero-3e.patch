@@ -656,3 +656,16 @@
 +CONFIG_USB_GADGET=y
 +CONFIG_USB_DWC3_GENERIC=y
 +CONFIG_USB_FUNCTION_FASTBOOT=n
+--- /dev/null
++++ b/arch/arm/dts/rk3566-radxa-zero-3e-u-boot.dtsi
+@@ -0,0 +1,10 @@
++// SPDX-License-Identifier: GPL-2.0+
++/*
++ * (C) Copyright 2021 Rockchip Electronics Co., Ltd
++ */
++
++#include "rk356x-u-boot.dtsi"
++
++&sdhci {
++       cap-mmc-highspeed;
++};
