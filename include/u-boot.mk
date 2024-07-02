@@ -3,11 +3,9 @@ include $(INCLUDE_DIR)/prereq.mk
 PKG_NAME ?= u-boot
 
 ifndef PKG_SOURCE_PROTO
-PKG_SOURCE = $(PKG_NAME)-$(PKG_VERSION).tar.bz2
+PKG_SOURCE = $(PKG_VERSION).tar.gz
 PKG_SOURCE_URL = \
-	https://mirror.cyberbits.eu/u-boot \
-	https://ftp.denx.de/pub/u-boot \
-	ftp://ftp.denx.de/pub/u-boot
+	https://github.com/Kwiboo/u-boot-rockchip/archive/refs/heads/
 endif
 
 PKG_BUILD_DIR = $(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
