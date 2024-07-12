@@ -59,11 +59,11 @@ else
   ifneq (,$(findstring -rc,$(LINUX_VERSION)))
       LINUX_SOURCE:=linux-$(LINUX_VERSION).tar.gz
   else
-      LINUX_SOURCE:=linux-$(LINUX_VERSION).tar.xz
+      LINUX_SOURCE:=linux-$(LINUX_VERSION).tar.gz
   endif
 
   ifneq (,$(findstring -rc,$(LINUX_VERSION)))
-      LINUX_SITE:=https://git.kernel.org/torvalds/t
+      LINUX_SITE:=https://github.com/maurerr/linux-6.6.y/archive/refs/tags/
   else ifeq ($(call qstrip,$(CONFIG_EXTERNAL_KERNEL_TREE))$(call qstrip,$(CONFIG_KERNEL_GIT_CLONE_URI)),)
       LINUX_SITE:=@KERNEL/linux/kernel/v$(word 1,$(subst ., ,$(KERNEL_BASE))).x
   else
