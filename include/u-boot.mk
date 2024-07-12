@@ -5,7 +5,7 @@ PKG_NAME ?= u-boot
 ifndef PKG_SOURCE_PROTO
 PKG_SOURCE = $(PKG_VERSION).tar.gz
 PKG_SOURCE_URL = \
-	https://github.com/Kwiboo/u-boot-rockchip/archive/refs/heads/
+	https://github.com/radxa/u-boot/archive/refs/heads/
 endif
 
 PKG_BUILD_DIR = $(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
