@@ -5,9 +5,9 @@
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
-PKG_VERSION:=rk3xxx-2024.07
+PKG_VERSION:=rk3xxx-2024.04
 PKG_RELEASE:=1
-PKG_HASH:=9cd0f31026fff1a2fe455bfca4b62b1addf8752707eb348f4829ba57454ee893
+PKG_HASH:=9b7ccdab290f7950142e4733d619c22f18e852d4d1da09bda44eaab832e8649f8
 
 PKG_MAINTAINER:=Tobias Maedel <openwrt@tbspace.de>
 
@@ -142,13 +142,6 @@ define U-Boot/radxa-cm3-io-rk3566
     radxa_cm3-io
 endef
 
-define U-Boot/radxa-zero-3-rk3566
-  $(U-Boot/rk3566/Default)
-  NAME:=ZERO 3
-  BUILD_DEVICES:= \
-    radxa_zero-3e
-endef
-
 define U-Boot/radxa-cm3-rpi-cm4-io-rk3566
   $(U-Boot/rk3566/Default)
   NAME:=E23
@@ -208,7 +201,6 @@ UBOOT_TARGETS := \
   rock-pi-e-rk3328 \
   radxa-cm3-io-rk3566 \
   radxa-cm3-rpi-cm4-io-rk3566 \
-  radxa-zero-3-rk3566 \
   bpi-r2-pro-rk3568 \
   nanopi-r5c-rk3568 \
   nanopi-r5s-rk3568 \
