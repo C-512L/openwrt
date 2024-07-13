@@ -5,9 +5,9 @@
 include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
-PKG_VERSION:=rk3xxx-2024.04
+PKG_VERSION:=2024.04
 PKG_RELEASE:=1
-PKG_HASH:=9b7ccdab290f7950142e4733d619c22f18e852d4d1da09bda44eaab832e8649f8
+PKG_HASH:=d8622a3ff0e5b1a33045cce36e3b0556c26a022035fb02a95fabbb0b671e11de
 
 PKG_MAINTAINER:=Tobias Maedel <openwrt@tbspace.de>
 
@@ -144,7 +144,7 @@ endef
 
 define U-Boot/radxa-cm3-rpi-cm4-io-rk3566
   $(U-Boot/rk3566/Default)
-  NAME:=E23
+  NAME:=CM3 RPI CM4 IO
   BUILD_DEVICES:= \
     radxa_cm3-rpi-cm4-io
 endef

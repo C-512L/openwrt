@@ -104,14 +104,14 @@ define Device/radxa_cm3-io
 endef
 TARGET_DEVICES += radxa_cm3-io
 
-define Device/radxa_e23
+define Device/radxa_cm3-rpi-cm4-io
   DEVICE_VENDOR := Radxa
-  DEVICE_MODEL := E23
+  DEVICE_MODEL := CM3 RPI CM4 IO
   SOC := rk3566
   DEVICE_DTS := rockchip/rk3566-radxa-cm3-rpi-cm4-io
   UBOOT_DEVICE_NAME := radxa-cm3-rpi-cm4-io-rk3566
 endef
-TARGET_DEVICES += radxa_e23
+TARGET_DEVICES += radxa_cm3-rpi-cm4-io
 
 define Device/radxa_e25
   DEVICE_VENDOR := Radxa
