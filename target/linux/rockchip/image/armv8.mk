@@ -109,7 +109,7 @@ define Device/radxa_zero-3e
   DEVICE_MODEL := ZERO 3E
   SOC := rk3566
   DEVICE_DTS := rockchip/rk3566-radxa-zero-3e
-  UBOOT_DEVICE_NAME := radxa-zero-3e-rk3566
+  UBOOT_DEVICE_NAME := radxa-zero-3-rk3566
 endef
 TARGET_DEVICES += radxa_zero-3e
 

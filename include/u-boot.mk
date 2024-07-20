@@ -8,7 +8,7 @@ PKG_SOURCE_URL = \
 	https://github.com/Kwiboo/u-boot-rockchip/archive/refs/heads/
 endif
 
-PKG_BUILD_DIR = $(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_BUILD_DIR = $(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-rockchip-$(PKG_VERSION)
 
 PKG_TARGETS := bin
 PKG_FLAGS:=nonshared
